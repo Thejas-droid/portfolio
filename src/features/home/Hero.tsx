@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { useRef } from "react";
 import { Reveal } from "@/components/animations/Reveal";
 import { Magnetic } from "@/components/animations/Magnetic";
+import { publicAsset } from "@/lib/public-asset";
 import { HeroOrb } from "@/components/sections/HeroOrb";
 import { useSplitReveal } from "@/hooks/useSplitReveal";
 
@@ -138,7 +139,7 @@ export function Hero() {
             className="absolute top-[25%] left-[5%] w-[90%] aspect-square bg-foreground/[0.05] transition-transform duration-700 group-hover:scale-95 -z-10"
           />
           <img
-            src="/profile_real_nobg2.png"
+            src={publicAsset("profile_real_nobg2.png")}
             alt="Thejas S"
             className="relative z-10 w-full h-auto object-contain drop-shadow-xl transition-all duration-700 group-hover:scale-105"
           />

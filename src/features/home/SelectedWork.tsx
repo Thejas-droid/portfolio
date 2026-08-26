@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { Magnetic } from "@/components/animations/Magnetic";
+import { publicAsset } from "@/lib/public-asset";
 
 type FeaturedProject = {
   slug: string;
@@ -27,7 +28,7 @@ const featured: FeaturedProject[] = [
     year: "2025 – Present",
     role: "Software Engineer · Jaldee Soft",
     stack: ["React", "TypeScript", "Angular", "Jenkins"],
-    image: "/lims.png",
+    image: publicAsset("lims.png"),
     kind: "production",
     body: [
       "Architected and developed a multi-tenant LIMS supporting 750+ orders per day across 25 laboratories, covering test configuration, order processing, result workflows, reporting, and tenant-aware delivery.",
@@ -41,7 +42,7 @@ const featured: FeaturedProject[] = [
     year: "2026",
     role: "Personal Project · AI Engineering",
     stack: ["Python", "PyTorch", "CUDA", "MLflow"],
-    image: "/forge.png",
+    image: publicAsset("forge.png"),
     kind: "AI & ML",
     body: [
       "Built an end-to-end LLM platform spanning a decoder-only transformer, data and tokenizer versioning, pretraining, LoRA SFT, DPO, evaluation, experiment tracking, and model promotion.",
@@ -55,7 +56,7 @@ const featured: FeaturedProject[] = [
     year: "2026",
     role: "Personal Project · Frontend Engineering",
     stack: ["TypeScript", "Playwright", "Chromium", "BullMQ"],
-    image: "/printlab.png",
+    image: publicAsset("printlab.png"),
     kind: "frontend",
     body: [
       "Built a visual-regression platform with pixel and perceptual diffing, DOM-based layout checks, parallel Chromium rendering, baseline management, and GitHub Checks integration.",
@@ -69,7 +70,7 @@ const featured: FeaturedProject[] = [
     year: "2026",
     role: "Personal Project · Quant Engineering",
     stack: ["C++20", "Linux", "TCP/epoll", "Lock-free queues"],
-    image: "/orderbook.png",
+    image: publicAsset("orderbook.png"),
     kind: "quant",
     body: [
       "Built strict price-time priority matching with indexed order lookup, intrusive FIFO queues, pre-trade risk, L2 market data, recovery, and a one-million-order latency benchmark.",

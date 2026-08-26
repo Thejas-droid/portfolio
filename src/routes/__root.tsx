@@ -17,6 +17,7 @@ import { Nav } from "../components/layout/Navigation";
 import { Footer } from "../components/layout/Footer";
 import { SmoothScroll } from "../components/animations/SmoothScroll";
 import { CustomCursor } from "../components/animations/CustomCursor";
+import { publicAsset } from "../lib/public-asset";
 
 function NotFoundComponent() {
   return (
@@ -60,12 +61,12 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           >
             Try again
           </button>
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
             Go home
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -103,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/profile.png", type: "image/png" },
+      { rel: "icon", href: publicAsset("profile.png"), type: "image/png" },
     ],
   }),
   shellComponent: RootShell,

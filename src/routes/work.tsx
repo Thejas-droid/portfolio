@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/animations/Reveal";
 import { HeroOrb } from "@/components/sections/HeroOrb";
 import { createFileRoute } from "@tanstack/react-router";
+import { publicAsset } from "@/lib/public-asset";
 
 type WorkProject = {
   slug: string;
@@ -16,7 +17,7 @@ type WorkProject = {
   body: string[];
 };
 
-const placeholderImage = "/project-placeholder.svg";
+const placeholderImage = publicAsset("project-placeholder.svg");
 const placeholderLink = "#project-link-placeholde";
 
 const workProjects: WorkProject[] = [
@@ -29,7 +30,7 @@ const workProjects: WorkProject[] = [
     role: "Software Engineer · Jaldee Soft",
     stack: ["React", "TypeScript", "Angular", "Jenkins", "AWS CloudFront"],
     repo: "https://jaldee.com/business/lims",
-    image: "/lims.png",
+    image: publicAsset("lims.png"),
     kind: "production",
     body: [
       "Architected and developed a multi-tenant LIMS supporting 750+ orders per day across 25 laboratories, covering test configuration, order processing, result workflows, and reporting.",
@@ -45,7 +46,7 @@ const workProjects: WorkProject[] = [
     role: "Software Engineer · Jaldee Soft",
     stack: ["React", "TypeScript", "Twilio", "REST APIs", "CDN Configuration"],
     repo: "https://play.google.com/store/apps/details?id=com.jaldeeinc.jaldeevets",
-    image: "/chotaboss.png",
+    image: publicAsset("chotaboss.png"),
     kind: "production",
     body: [
       "Built a veterinary telehealth and pet-commerce experience supporting 150+ daily bookings across scheduling, video consultations, chat, prescriptions, and purchases.",
@@ -61,7 +62,7 @@ const workProjects: WorkProject[] = [
     role: "Software Engineer · Jaldee Soft",
     stack: ["React", "Angular", "TypeScript", "Micro Frontends", "REST APIs"],
     repo: "https://jaldee.com/business/golderp",
-    image: "/golderp.png",
+    image: publicAsset("golderp.png"),
     kind: "production",
     body: [
       "Developed sales, inventory, order, tagging, invoicing, and billing modules using a micro-frontend architecture for multi-branch operations.",
@@ -77,7 +78,7 @@ const workProjects: WorkProject[] = [
     role: "Software Engineering Intern · Jaldee Soft",
     stack: ["TypeScript", "JavaScript", "REST APIs", "Config-driven UI"],
     repo: "https://www.chotaboss.com",
-    image: "/sdk.png",
+    image: publicAsset("sdk.png"),
     kind: "production",
     body: [
       "Engineered an embeddable SDK with configurable forms, validation, styling, and API-driven submission workflows.",
@@ -93,7 +94,7 @@ const workProjects: WorkProject[] = [
     role: "Software Engineering Intern · Jaldee Soft",
     stack: ["React", "TypeScript", "Razorpay", "Caching", "REST APIs"],
     repo: placeholderLink,
-    image: "/carty.png",
+    image: publicAsset("carty.png"),
     kind: "production",
     body: [
       "Built a reusable commerce platform covering catalog, search, cart, checkout, payments, order tracking, offers, and store operations.",
@@ -109,7 +110,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · AI Engineering",
     stack: ["Python", "PyTorch", "Transformers", "TRL", "PEFT", "CUDA", "MLflow"],
     repo: placeholderLink,
-    image: "/forge.png",
+    image: publicAsset("forge.png"),
     kind: "ai",
     body: [
       "Built an end-to-end platform around a decoder-only transformer implemented from first principles, spanning data and tokenizer versioning, pretraining, LoRA SFT, DPO, evaluation, and model registry workflows.",
@@ -125,7 +126,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · AI Engineering",
     stack: ["Python", "PyTorch", "CUDA", "FastAPI", "Prometheus", "Docker"],
     repo: placeholderLink,
-    image: "/inferserve.png",
+    image: publicAsset("inferserve.png"),
     kind: "ai",
     body: [
       "Built iteration-level scheduling with continuous batching, chunked prefill, and paged KV-cache allocation for concurrent decoder-only generation.",
@@ -141,7 +142,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · AI Engineering",
     stack: ["Python", "FastAPI", "PostgreSQL", "Docker", "React", "OpenTelemetry"],
     repo: placeholderLink,
-    image: "/evallab.png",
+    image: publicAsset("evallab.png"),
     kind: "ai",
     body: [
       "Built versioned evaluation scenarios with isolated tool environments, complete trajectory tracing, and deterministic, state-based, trajectory-based, and model-based evaluators.",
@@ -157,7 +158,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Frontend Engineering",
     stack: ["TypeScript", "Playwright", "Chromium", "Web Workers", "BullMQ"],
     repo: placeholderLink,
-    image: "/printlab.png",
+    image: publicAsset("printlab.png"),
     kind: "frontend",
     body: [
       "Built pixel and perceptual comparison with DOM-based detection of clipping, collisions, overflow, and page-break errors.",
@@ -173,7 +174,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Frontend Engineering",
     stack: ["TypeScript", "Playwright", "Chromium", "Web Workers", "Extension APIs"],
     repo: placeholderLink,
-    image: "/bugreplay.png",
+    image: publicAsset("bugreplay.png"),
     kind: "frontend",
     body: [
       "Built a browser SDK and Manifest V3 extension that captures interactions, errors, network and DOM changes, and performance events into redacted, compressed traces.",
@@ -189,7 +190,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Frontend Engineering",
     stack: ["TypeScript", "Node.js", "Playwright", "AST Codemods", "Figma API"],
     repo: placeholderLink,
-    image: "/design.png",
+    image: publicAsset("design.png"),
     kind: "frontend",
     body: [
       "Built a compiler that resolves token dependency graphs, detects cyclic and type-invalid references, and generates CSS variables, typed APIs, themes, schemas, and documentation.",
@@ -205,7 +206,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Systems Engineering",
     stack: ["C++20", "Clang", "Tree-sitter", "PostgreSQL", "Redis", "Docker"],
     repo: placeholderLink,
-    image: "/testgraph.png",
+    image: publicAsset("testgraph.png"),
     kind: "systems",
     body: [
       "Built a C++20 engine that constructs dependency graphs and performs transitive impact analysis with Tarjan strongly connected components to select tests affected by each Git diff.",
@@ -221,7 +222,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Systems Engineering",
     stack: ["C++20", "RocksDB", "ONNX Runtime", "Drogon", "Docker"],
     repo: placeholderLink,
-    image: "/forgesearch.png",
+    image: publicAsset("forgesearch.png"),
     kind: "systems",
     body: [
       "Built a positional inverted index with compressed posting lists, BM25 ranking, Boolean and phrase queries, autocomplete, and typo correction.",
@@ -237,7 +238,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Search Engineering",
     stack: ["Python", "NumPy", "FAISS", "HNSW", "NGT", "Pillow", "Docker"],
     repo: placeholderLink,
-    image: "/imagedupe.png",
+    image: publicAsset("imagedupe.png"),
     kind: "systems",
     body: [
       "Built a near-duplicate image engine using perceptual hashing and Hamming-distance similarity with approximate-nearest-neighbor indexes and a FAISS exact-search baseline.",
@@ -253,7 +254,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Quant Engineering",
     stack: ["C++20", "Linux", "TCP/epoll", "Lock-free queues", "CMake"],
     repo: placeholderLink,
-    image: "/orderbook.png",
+    image: publicAsset("orderbook.png"),
     kind: "quant",
     body: [
       "Built strict price-time priority matching with indexed order lookup, intrusive FIFO queues, partial fills, cancellation, and priority-aware modification.",
@@ -269,7 +270,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Quant Engineering",
     stack: ["C++20", "mmap", "Columnar Storage", "SIMD", "CMake"],
     repo: placeholderLink,
-    image: "/chrono.png",
+    image: publicAsset("chrono.png"),
     kind: "quant",
     body: [
       "Built an immutable, append-only columnar store with fixed-point prices, delta encoding, bit packing, checksums, and sparse timestamp indexes.",
@@ -285,7 +286,7 @@ const workProjects: WorkProject[] = [
     role: "Personal Project · Quant Engineering",
     stack: ["C++20", "POSIX Threads", "TCP Sockets", "Market Data"],
     repo: placeholderLink,
-    image: "/algo.png",
+    image: publicAsset("algo.png"),
     kind: "quant",
     body: [
       "Built a multi-stage trading simulator covering event-driven order processing, expiration-aware matching, decision logic, arbitrage detection, and execution across multiple feeds.",

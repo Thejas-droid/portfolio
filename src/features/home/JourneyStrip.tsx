@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Reveal } from "@/components/animations/Reveal";
 import { Magnetic } from "@/components/animations/Magnetic";
+import { publicAsset } from "@/lib/public-asset";
 
 const beats = [
   {
@@ -9,35 +10,35 @@ const beats = [
     label: "Computer Hardware Engineering",
     note: "Completed a Diploma in Computer Hardware Engineering at Government Polytechnic College, Cherthala, building the hardware and systems foundation behind my software work.",
     lesson: "Understand the machine beneath the code.",
-    image: "/poly.png",
+    image: publicAsset("poly.png"),
   },
   {
     year: "2022 — 2025",
     label: "B.Tech in Computer Science and Engineering",
     note: "Studied Computer Science and Engineering at APJ Abdul Kalam Technological University and developed a deeper grounding in algorithms, operating systems, databases, and networks.",
     lesson: "Foundations make ambitious systems possible.",
-    image: "/btech.png",
+    image: publicAsset("btech.png"),
   },
   {
     year: "Aug — Oct 2025",
     label: "Software Engineering Intern",
     note: "Joined Jaldee Soft and built an embeddable lead-collection SDK plus a reusable multi-tenant commerce platform with payments and configurable client behavior.",
     lesson: "Reusable foundations multiply delivery speed.",
-    image: "/jaldee.png",
+    image: publicAsset("jaldee.png"),
   },
   {
     year: "Nov 2025 — Present",
     label: "Software Engineer at Jaldee Soft",
     note: "Building production healthcare, commerce, and enterprise products, including a LIMS serving 25 laboratories and 750+ daily orders, veterinary telehealth, and a multi-branch ERP.",
     lesson: "Production software is measured by real use.",
-    image: "/jaldee.png",
+    image: publicAsset("jaldee.png"),
   },
   {
     year: "2026",
     label: "Independent Systems Work",
     note: "Going deeper across LLM training and inference, browser infrastructure, search engines, CI intelligence, market data, and low-latency trading systems.",
     lesson: "Build the system to understand the system.",
-    image: "/self.png",
+    image: publicAsset("self.png"),
   },
 ];
 
