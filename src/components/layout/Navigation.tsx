@@ -93,7 +93,7 @@ export function Nav() {
           <Link
             ref={logoRef}
             to="/"
-            className="group flex items-baseline justify-center gap-1.5 md:gap-2 font-display text-xl sm:text-2xl md:text-[3.75rem] tracking-tight text-foreground z-[60] relative"
+            className="group flex items-baseline justify-center gap-1.5 md:gap-2 font-display text-xl sm:text-2xl md:text-[2.75rem] tracking-tight text-foreground z-[60] relative"
             onClick={() => setMobileMenuOpen(false)}
             data-cursor="hover"
           >
