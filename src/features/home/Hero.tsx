@@ -34,11 +34,11 @@ export function Hero() {
       <motion.div
         aria-hidden
         style={reduced ? undefined : { y: titleY, scale }}
-        className="absolute right-6 top-[18svh] hidden max-w-[42rem] font-display text-[clamp(5rem,12vw,13rem)] leading-[0.78] text-foreground/[0.05] md:block z-20 pointer-events-none"
+        className="absolute right-6 top-[18svh] hidden max-w-[42rem] font-display text-[clamp(3rem,7vw,8rem)] leading-[0.78] text-foreground/[0.05] md:block z-20 pointer-events-none"
       >
-        CRAFT
-        <br />
         BUILD
+        <br />
+        CONCEPT
       </motion.div>
 
       <div className="relative z-30 mx-auto flex w-full max-w-[1440px] flex-col items-center justify-between px-6 pb-12 md:flex-row md:items-start md:px-10 md:pb-0">
@@ -55,13 +55,20 @@ export function Hero() {
 
           <h1
             ref={titleRef}
-            className="font-display text-balance-tight mt-10 text-[clamp(3rem,11vw,12rem)] tracking-tight pointer-events-auto"
+            className="font-display text-balance-tight mt-10 text-[clamp(3rem,11vw,12rem)] tracking-tight pointer-events-auto leading-[0.92]"
           >
             Software engineer
             <br />
-            <span className="italic text-ember">behind the scenes</span>
+
+            <span className="italic text-ember text-[clamp(1.8rem,8.5vw,9rem)]">
+              writing the logic
+            </span>
+
             <br />
-            of craft.
+
+            <span className="text-[clamp(1.8rem,8.5vw,9rem)]">
+              behind systems
+            </span>
           </h1>
 
           <div className="mt-10 flex flex-col gap-8 pb-12 pointer-events-auto">
@@ -70,9 +77,9 @@ export function Hero() {
               className="max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
             >
               I build things behind what you use like production products, AI systems,
-               frontend infrastructure, and software built to perform under pressure.Currently a{" "}
-              <span className="text-foreground">Software Engineer at Jaldee Soft</span>, building multi-tenant systems across healthcare, commerce, and enterprise.
-              I care about the details most people don't see architecture that lasts, performance you can measure, and software that keeps working when real users show up.
+              frontend infrastructure, and software built to perform under pressure.Currently a{" "}
+              <span className="text-foreground">Software Engineer</span>, building multi-tenant systems across healthcare, commerce, and enterprise.
+              I care about the details most people don't see architecture that lasts, performance you can measure, and software that keeps working.
             </p>
 
             <Reveal delay={0.2}>

@@ -85,8 +85,8 @@ export function Nav() {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-40 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${scrolled
-            ? "backdrop-blur-md bg-[color-mix(in_oklab,var(--paper)_82%,transparent)] border-b border-hair shadow-[0_1px_8px_color-mix(in_oklab,var(--ink)_4%,transparent)]"
-            : "bg-transparent"
+          ? "backdrop-blur-md bg-[color-mix(in_oklab,var(--paper)_82%,transparent)] border-b border-hair shadow-[0_1px_8px_color-mix(in_oklab,var(--ink)_4%,transparent)]"
+          : "bg-transparent"
           }`}
       >
         <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 py-4 md:px-10">
@@ -149,8 +149,8 @@ export function Nav() {
 
       <div
         className={`fixed inset-0 z-50 flex flex-col justify-center bg-background backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden ${mobileMenuOpen
-            ? "opacity-100 visible pointer-events-auto"
-            : "opacity-0 invisible pointer-events-none"
+          ? "opacity-100 visible pointer-events-auto"
+          : "opacity-0 invisible pointer-events-none"
           }`}
       >
         <nav className="flex flex-col items-center justify-center gap-8 px-6">

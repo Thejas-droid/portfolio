@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Get in touch with Thejas S — Software Engineer at Jaldee Soft working across frontend, AI, systems, and quantitative engineering.",
+          "Get in touch with Thejas S — Software Engineer working across frontend, AI, systems, and quantitative engineering.",
       },
       { property: "og:title", content: "Contact — Thejas S" },
       {

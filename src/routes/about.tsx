@@ -10,7 +10,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Software Engineer at Jaldee Soft building production products, frontend platforms, AI infrastructure, search engines, and quantitative systems.",
+          "Software Engineer building production products, frontend platforms, AI infrastructure, search engines, and quantitative systems.",
       },
       { property: "og:title", content: "About — Thejas S" },
       {

@@ -79,17 +79,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        title: "Thejas S — Software Engineer connecting the pieces behind the product",
+        title: "Thejas S ",
       },
       {
         name: "description",
         content:
-          "Software Engineer at Jaldee Soft building multi-tenant production products, AI systems, frontend infrastructure, search engines, and quantitative software.",
+          "Software Engineer building multi-tenant production products, AI systems, frontend infrastructure, search engines, and quantitative software.",
       },
       { name: "author", content: "Thejas S" },
       {
         property: "og:title",
-        content: "Thejas S — Software Engineer",
+        content: "Thejas S",
       },
       {
         property: "og:description",

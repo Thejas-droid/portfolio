@@ -31,7 +31,7 @@ export function IntroStatement() {
               multi-tenant products, AI infrastructure, browser tooling, search engines, and
             </div>
             <div className="split-target italic text-foreground/75">
-              low-latency software designed to survive real use.
+              low-latency software designed to perform.
             </div>
           </div>
         </Reveal>

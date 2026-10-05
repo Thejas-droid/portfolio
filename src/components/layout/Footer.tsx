@@ -274,7 +274,7 @@ export function Footer() {
             ref={closingRef}
             className="font-display text-balance-tight max-w-5xl text-[clamp(2.5rem,6vw,6.5rem)] leading-[0.9]"
             dangerouslySetInnerHTML={{
-              __html: `Built below the surface.<br /><span class="italic text-ember">Made to hold.</span>`,
+              __html: `Built below the surface.<br /><span class="italic text-ember">rarely simple.</span>`,
             }}
           />
         </div>

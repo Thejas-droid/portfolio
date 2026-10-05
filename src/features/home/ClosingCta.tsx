@@ -24,7 +24,7 @@ export function ClosingCta() {
             >
               <span className="split-target block">Bring me the</span>
               <span className="split-target italic text-ember block">problem</span>
-              <span className="split-target block">that keeps returning.</span>
+              {/* <span className="split-target block">that keeps returning.</span> */}
             </h2>
           </div>
           <div className="relative p-8 md:p-10 md:col-span-5 md:col-start-8 md:-ml-8 lg:-ml-12">
